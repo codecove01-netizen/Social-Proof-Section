@@ -1,0 +1,111 @@
+/* ===========================================
+    FRONTEND MENTOR - SOCIAL PROOF SECTION
+    AUTHOR BY - ARATI D'SA
+=============================================== */
+
+/* =============================
+            CSS RESET
+===================================== */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width:100%;
+    height: auto;
+}
+
+/* =============================
+            CUSTOM PROPERTIES
+===================================== */
+:root{
+    /* COLORS */
+    /* Primary Colors */
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+
+    /* Neutral Colors */
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    /* FONT SIZE */
+    --fs-15: 15px;
+
+    /* FONT WEIGHT */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+    /* FONT FAMILY */
+    --ff-league: "League Spartan", sans-serif;
+}
+
+/* =============================
+            GLOBAL STYLES
+===================================== */
+body{
+    font-family: var(--ff-league);
+    font-size: var(--fs-15);
+    font-weight: var(--fw-400);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./images/bg-pattern-top-mobile.svg') top left no-repeat,
+                url('./images/bg-pattern-bottom-mobile.svg') bottom -10vh right no-repeat;
+    /* background-color: var(--lightGrayishMagenta);   */    
+    background-color: pink;          
+}
+
+/* =============================
+            LAYOUT
+===================================== */
+.main-container{
+    padding: 5rem 1rem;
+    border: 1px solid black;
+}
+
+.main-title{
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 0.85;
+    padding-inline: 2rem;
+}
+.description{
+    margin-block-start: 1.5rem;
+    font-size: 1.1rem;
+    padding-inline: 0.83rem 0.8rem;
+    line-height: 1.4;
+    text-align: center;
+}
+.star-container{
+    margin-block-start: 2.2rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1.18rem;
+    padding-inline:1rem;
+}
+.review-star{
+    border:1px solid black;
+    width:20.4rem;
+    border-radius: 10px;
+    text-align: center;
+    padding-block:0.8rem;
+}
+.star-box{
+    display: flex;
+    gap:0.5rem;   
+    justify-content: center;
+    align-items: center;
+}
+.review-descpt{
+    margin-block-start: 1.1rem;
+    font-size: 1.1rem;
+    font-weight: var(--fw-700);
+}
