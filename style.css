@@ -109,3 +109,46 @@ body{
     font-size: 1.1rem;
     font-weight: var(--fw-700);
 }
+.review-container
+{
+    margin-block-start: 3rem;
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+}
+.review-box{
+    width:20.4rem;
+    border:1px solid red;
+    padding:2.5rem 2rem;
+}
+.personal-box{
+    display:flex;
+    flex-direction: row;
+    column-gap: 1.3rem;
+}
+.profile-pic{
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+}
+.profile-name{
+    font-size: 1.1rem;
+}
+.verification{
+    margin-block-start: 0.4rem;
+    font-size: 1.1rem;
+}
+.review{
+    margin-block-start: 1.8rem;
+    font-size: 1.04rem;
+    line-height: 1.3;
+}
+
+
+
+
+
+
+
