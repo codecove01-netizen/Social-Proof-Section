@@ -13,7 +13,7 @@
 
 
 <h3 align="center">
-  🌐 <a href="https://codecove01-netizen.github.io/Huddle-Landing-Page-With-A-Single-Introductory-Section/">Live Demo</a>
+  🌐 <a href="https://codecove01-netizen.github.io/Social-Proof-Section/">Live Demo</a>
   &nbsp;|&nbsp;
   📂 <a href="https://github.com/codecove01-netizen/Social-Proof-Section">Source Code</a>
   &nbsp;|&nbsp;
@@ -37,7 +37,7 @@
 <h3 align="center">💻 Desktop View</h3>
 
 <p align="center">
-  <img src="./socialDesktop.pdf" alt="Desktop Preview" width="900">
+  <img src="./socialDesktop.png" alt="Desktop Preview" width="900">
 </p>
 
 <br>
@@ -45,7 +45,7 @@
 <h3 align="center">📱 Mobile View</h3>
 
 <p align="center">
-  <img src="./socialMobile.pdf" alt="Mobile Preview" width="250">
+  <img src="./socialMobile.png" alt="Mobile Preview" width="250">
 </p>
 
 ---
