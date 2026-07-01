@@ -35,7 +35,7 @@ img{
     --white: hsl(0, 0%, 100%);
 
     /* FONT SIZE */
-    --fs-15: 15px;
+    --fs-15: 0.94rem;
 
     /* FONT WEIGHT */
     --fw-400: 400;
@@ -67,10 +67,10 @@ body{
 /* =============================
             LAYOUT
 ===================================== */
+/* MAIN CONATAINER */
 .main-container{
     padding: 5rem 1rem;
 }
-
 .main-title{
     font-size: 2.4rem;
     text-align: center;
@@ -87,23 +87,25 @@ body{
     color: var(--darkGrayishMagenta);
     font-weight: var(--fw-500);
 }
+/* STAR CONTAINER */
 .star-container{
     margin-block-start: 2.2rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.18rem;
-    padding-inline:1rem;
+    padding-inline: 1rem;
 }
 .review-star{
-    width:20.4rem;
-    border-radius: 10px;
+    min-width: clamp(20.4rem,29vw,36rem);
+    border-radius: 0.63rem;
     text-align: center;
-    padding-block:0.8rem;
+    padding-block: 0.8rem;
     background-color: var(--lightGrayishMagenta-accent);
 }
 .star-box{
     display: flex;
-    gap:0.5rem;   
+    gap: 0.5rem;   
     justify-content: center;
     align-items: center;
 }
@@ -113,29 +115,30 @@ body{
     font-weight: var(--fw-700);
     color: var(--veryDarkMagenta);
 }
+/* REVIEW CONTAINER */
 .review-container
 {
     margin-block-start: 3rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap:0.9rem;
+    gap: 0.9rem;
 }
 .review-box{
-    width:20.4rem;
-    padding:2.5rem 2rem 2rem 2rem;
+    max-width: clamp(20.4rem,25vw,22rem);
+    padding: 2.5rem 2rem 2rem 2rem;
     background-color: var(--veryDarkMagenta);
-    border-radius: 10px;
+    border-radius: 0.63rem;
 }
 .personal-box{
-    display:flex;
+    display: flex;
     flex-direction: row;
     column-gap: 1.3rem;
 }
 .profile-pic{
     border-radius: 50%;
-    width:40px;
-    height:40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .profile-name{
     font-size: 1.1rem;
@@ -152,13 +155,12 @@ body{
     line-height: 1.3;
     color: var(--white);
 }
-
+/* FOOTER */
 footer{
     font-size: 1rem;
     color: var(--darkGrayishMagenta);
     font-weight: var(--fw-700);
 }
-
 footer a{
     text-decoration: none;
     color: var(--softPink);
@@ -169,11 +171,97 @@ footer a:focus-visible{
     color: var(--veryDarkMagenta);
 }
 footer a:focus-visible{
-    outline: 2px solid var(--darkGrayishMagenta);
-    outline-offset: 2px;
+    outline: 0.13rem solid var(--darkGrayishMagenta);
+    outline-offset: 0.13rem;
 }
 
-
+/* =============================
+            DESKTOP STYLE
+===================================== */
+@media screen and (min-width:48rem) {
+    body{
+        background: url('./images/bg-pattern-top-desktop.svg') top left no-repeat,
+                url('./images/bg-pattern-bottom-desktop.svg') bottom right no-repeat;
+       
+    }
+    .main-container{
+        display: grid;
+        grid-template-areas: 
+        'title star'
+        'review  review';
+        grid-template-columns: 40% 60%;
+        max-inline-size: 70rem;
+        padding: 5rem 0rem;
+    }
+    .title-description{
+        grid-area: title;
+        margin-block-start: 2.2rem;
+    }
+    .main-title{
+        font-size: 3.33rem;
+        text-align: left;
+        line-height: 0.9;
+        padding-inline:0;
+        max-inline-size: 25rem;
+    }     
+    .description{
+        padding-inline: 0;
+        text-align: left;
+    } 
+    .star-container{
+        grid-area: star;
+        gap: 0.9rem;
+        padding-inline: 0;
+        margin-block-start: 3.8rem;
+        margin-inline-start: 1.5rem;
+    }
+    .review-star{
+        display: flex;
+        padding-inline: 2rem 0;
+        padding-block: 1.3rem;
+    }
+    .review-descpt{
+        margin-block-start: 0;
+        padding-inline: 2rem;
+    }
+    .guru-box{
+        margin-inline-start: 5.7rem;
+    }
+    .bestech-box{
+        margin-inline-start: 11.5rem;
+    }
+    .review-container{
+        grid-area: review;
+        display: flex;
+        flex-direction: row;
+        gap: 1.6rem;
+        align-items: flex-start;
+    }
+    .review-box{
+        padding: 2.7rem 1.5rem 2.5rem 2rem;
+        margin-block-start: 1.6rem;
+    }
+    .personal-box{
+        column-gap: 1.5rem;
+    }
+    .verification{
+        margin-block-start: 0.3rem;
+    }
+    .review{
+        margin-block-start: 1.65rem;
+        font-size: 1.03rem;
+    }
+    .review-box:nth-child(2)
+    {
+        margin-block-start: 2.5rem;
+        padding-inline: 2rem 2.5rem;       
+    }
+    .review-box:nth-child(3)
+    {
+        margin-block-start: 3.5rem;
+        padding-inline: 2.2rem 2.5rem;
+    }
+}
 
 
 
