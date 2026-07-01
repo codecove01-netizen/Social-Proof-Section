@@ -60,7 +60,7 @@ body{
     min-height: 100vh;
     background: url('./images/bg-pattern-top-mobile.svg') top left no-repeat,
                 url('./images/bg-pattern-bottom-mobile.svg') bottom -10vh right no-repeat;
-    background-color: var(--lightGrayishMagenta);  
+    background-color: var(--white);  
      
 }
 

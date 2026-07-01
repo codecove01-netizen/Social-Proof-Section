@@ -37,7 +37,7 @@
 <h3 align="center">💻 Desktop View</h3>
 
 <p align="center">
-  <img src="./socialDesktop.png" alt="Desktop Preview" width="900">
+  <img src="./socialDesktop.pdf" alt="Desktop Preview" width="900">
 </p>
 
 <br>
@@ -45,7 +45,7 @@
 <h3 align="center">📱 Mobile View</h3>
 
 <p align="center">
-  <img src="./socialMobile.png" alt="Mobile Preview" width="250">
+  <img src="./socialMobile.pdf" alt="Mobile Preview" width="250">
 </p>
 
 ---
@@ -89,20 +89,10 @@
 
 ## 🎯 The Challenge
 
-- Build out this https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bASection and get it looking as close to the design as possible.
+- Build out this Social Proof Section and get it looking as close to the design as possible.
 - Users should be able to:
   1. View the optimal layout depending on their device's screen size
-  2. See hover and focus states for all interactive elements on the page
-- Try estimating the time it will take for you to build the project. Then see if the time taken matches up to your estimate.
----
-
-## ⏱️ Time Estimation
-
-- Estimated time: 2 hours
-- Actual time: 2 hours 45 minutes
-  1. Extra time was spent refining the desktop layout.
-  2. Adjusted spacing and alignment across different viewport widths.
-  3. Polished hover states, focus states, and responsive behavior.
+ 
 ---
 <h2 align="left">🌐 Connect With Me</h2>
 
